@@ -25,3 +25,62 @@ Solution
 2. When reader reads mutex is increased which blocks the writer to write at the same time.
 3. Untill reader count is 0 the writer waits outside the critical section.
 4. After read count is 0 writer writes the data.
+
+
+=================================================================================================================================
+
+
+
+C executable code implementation
+================================
+
+# In this the main file is the "rwpro.c" file.
+
+# Compile the file and you will get the executable file.
+
+# Before compiling the file copy the "semaphore.h" header file and paste it in the include directory
+
+# The program wil execute in the form of switch statement.
+
+# where you have to enter the choice that for which you want to see the running example.
+
+# after entering ht choice you can see the running example.
+
+
+
+
+=====================================================================================================================================
+
+
+
+Graphical Explaination through HTML
+===================================
+
+# First of all run the "main.html" file 
+
+# This will open the home page
+
+# Here we have put the reader/writer problem and its solution.
+
+# In the left-below section there are 5 buttons.
+
+# The buttons are named as 
+	
+	1.critical section
+
+	2.Semaphore
+
+	3.Busy Waiting
+
+	4.Mutex
+
+	5.Monitor
+
+# Here we have have explain the above topics taking reader/writer problem as a refrence.
+
+# Click on the button on the topic u want to learn 
+
+# on the left there are steps click on next to see the graphical representation of the process.
+
+
+===========================================================================================================================================
