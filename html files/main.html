@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title> Main </title>
+	</head>
+	<body>
+		<center><h1>WELCOME TO E-LEARNING SOFTWARE<br> OF <br> PROCESS SYNCHRONIZATION</h1></CENTER>
+		
+		<div style="width:530px;height:550px;background-color:#b0c4de;clear:both;margin-top:30px;padding-top:20px;padding-right:10px;padding-left:10px;">
+		    Here we have tried to develop a software where we will explain you the various cocepts of process synchronization like critical section, semaphore, mutex, busy waiting etc by taking an example of READERS/WRITERS.<br>
+	
+			<br><br><h3>Readers/Writers Problem</h3>
+
+			1. There can be 'n' no of readers and a writer for a shared data.<br>
+			2. At a time only one action can be performed.<br>
+			3. Any no of reader can read at a time but no one can write at the same time.<br>		
+			<h3>Solution</h3>
+			1. Only one process can go  in critical secton.<br>
+			2. When reader reads mutex is increased which blocks the writer to write at the same time.<br>
+			3. Untill reader count is 0 the writer waits outside the critical section.<br>
+			4. After read count is 0 writer writes the data.<br><br>
+
+			
+			<form>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="critical_section.html" style="text-decoration:none;"><input type="button" value="Critical Section"></a>
+				<a href="semaphore1.html" style="text-decoration:none;"><input type="button" value="Semaphore"></a>
+				<a href="busy_waiting.html" style="text-decoration:none;"><input type="button" value="Busy Waiting"><br></a>
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="mutex.html" style="text-decoration:none;"><input type="button" value="Mutex"></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+				<a href="monitor.html" style="text-decoration:none;"><input type="button" value="Monitor"><br><br></a>
+			</form>						
+		</div>
+		<div style="width:750px;clear:both;float:right;margin-top:-550px">
+			<img src="main.PNG" height="400" width="750">
+		</div>
+		</style>
+	</body>
+</html>
