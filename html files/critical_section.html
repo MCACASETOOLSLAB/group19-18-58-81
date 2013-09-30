@@ -1,0 +1,45 @@
+<!--  -->
+<html>
+	<head>
+		<title>critical section</title>
+		<!--<link rel="stylesheet" type="text/css" href="mystyle.css">-->
+	</head>
+	<body>
+		<center><h1>CRITICAL SECTION</h1></CENTER>
+		<div style="width:530px;height:550px;background-color:#b0c4de;clear:both;margin-top:30px;padding-top:20px;padding-right:10px;padding-left:10px;">
+		<h3>Definition : </h3>						
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		A section of code, common to n cooperating processes, in which the processes may be accessing common variables.<br><br>
+		<h3>A Critical Section Environment contains:</h3>
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		# <b>Entry Section</b>   	Code requesting entry into the critical section.<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+		# <b>Critical Section</b>   Code in which only one process can execute at any one time.<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+		# <b>Exit Section</b>       The end of the critical section, releasing or allowing others in.<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+		# <b>Remainder Section</b>  Rest of the code AFTER the critical section.<br><br>
+		
+		
+		<h3>The critical section must ENFORCE ALL THREE of the following rules:</h3>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		# <b>Mutual Exclusion:</b>   	No more than one process can execute in its critical section at one time.<br>
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		# <b>Progress:</b>   	If no one is in the critical section and someone wants in, then those processes not in their remainder section must be able to decide in a finite time who should go in.<br>
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		# <b>Bounded Wait:</b>   	All requesters must eventually be let into the critical section.<br>
+        </div>
+		<div style="width:750px;clear:both;float:right;margin-top:-560px">
+		    <a href="main.html"><b>HOME</b></a>
+			<h3>Practical Implementation :</h3>
+			 <iframe src="cs1.html" width="750" height="500"></iframe>
+		</div>
+
+	</body>
+</html>
