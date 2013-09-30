@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Mutex</title>
+		<!--<link rel="stylesheet" type="text/css" href="mystyle.css">-->
+	</head>
+	<body>
+		<center><h1>MUTEX</h1></CENTER>
+		<div style="width:530px;height:550px;background-color:#b0c4de;clear:both;margin-top:30px;padding-top:20px;padding-right:10px;padding-left:10px;">
+		<h3>Definition : </h3>						
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		# Mutex (MUTual EXclusion) variables are one of the primary means of implementing thread synchronization and for protecting shared data when multiple writes occur.
+        <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		# A mutex variable acts like a lock protecting access to a shared data resource. 
+        <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		# The basic concept of a mutex as used in Pthreads is that only one thread can lock (or own) a mutex variable at any given time.
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		# The programmer is responsible to make sure every thread that needs to use a mutex does so.
+		<br><br>
+		<h3> Mutex Work Flow </h3>
+		 &nbsp;&nbsp;&nbsp;&nbsp;
+		 A typical sequence in the use of a mutex is as follows: <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		#  Create and initialize a mutex variable. 
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		#  Several threads attempt to lock the mutex. 
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		#  Only one succeeds and that thread owns the mutex. 
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		#  The owner thread performs some set of actions.
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		#  The owner unlocks the mutex.
+
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		#  Another thread acquires the mutex and repeats the process.
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		#  Finally the mutex is destroyed.
+		<br>
+		<br>
+		 </div>
+		<div style="width:750px;clear:both;float:right;margin-top:-560px">
+		    <a href="main.html"><b>HOME</b></a>
+			<h3>Practical Implementation :</h3>
+			 <iframe src="mutex1.html" width="750" height="500"></iframe>
+		</div>
+	
+
+	</body>
+</html>
+		
