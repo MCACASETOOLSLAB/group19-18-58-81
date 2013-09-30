@@ -1,0 +1,39 @@
+<!--  -->
+<html>
+	<head>
+		<title>Busy Waiting</title>
+		<!--<link rel="stylesheet" type="text/css" href="mystyle.css">-->
+	</head>
+	<body>
+		<center><h1>BUSY WAITING</h1></CENTER>
+		<div style="width:530px;height:550px;background-color:#b0c4de;clear:both;margin-top:30px;padding-top:20px;padding-right:10px;padding-left:10px;">
+		<h3>Definition : </h3>						
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Continuously testing a variable until some value appears is called busy waiting.<br>
+		<h3>Conditional Synchronization</h3>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		# A lock that uses busy waiting is called a spin lock .<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		# It should usually be avoided, since it wastes CPU time.<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		# Only when there is a reasonable expectation that the wait will be short is busy waiting used. 
+		<br><br><br>
+		<h3>Issues with this critical section solution:</h3>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         #  Busy wait (aka. polling):  In a loop, continuously checking the value of variables<br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         #  These processes are doing a busy wait until allowed into critical section
+        <br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         #  Busy waiting is not the same as a process being blocked. <br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         #  Threads actively take CPU cycles when waiting for other threads to exit from critical section
+        <br><br>
+		 </div>
+		<div style="width:750px;clear:both;float:right;margin-top:-560px">
+		    <a href="main.html"><b>HOME</b></a>
+			<h3>Practical Implementation :</h3>
+			 <iframe src="Bwaiting1.html" width="750" height="500"></iframe>
+		</div>
+	</body>
+</html>
